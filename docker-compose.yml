@@ -27,7 +27,7 @@ services:
     container_name: two_tier_app
     ports:
       - "8000:8000"
-    environment:
+    environment: # In production apps environment variables should be stored in a .env file
       MYSQL_HOST: mysql
       MYSQL_USER: root
       MYSQL_PASSWORD: root
